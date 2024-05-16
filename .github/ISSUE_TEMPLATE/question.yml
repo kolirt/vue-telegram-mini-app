@@ -1,0 +1,31 @@
+name: 💬 Question
+description: Ask a question about the vue-telegram-mini-app.
+title: '[Question]: '
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before asking a question, please make sure that you have read through our [documentation](https://github.com/kolirt/vue-telegram-mini-app?tab=readme-ov-file#vue-3-timestamp) and existing [issues](https://github.com/kolirt/vue-telegram-mini-app/issues).
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      description: |
+        Leave blank if you have not yet configured the package and have not used it.
+      placeholder: v0.0.0
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Package configuration
+      description: |
+        Show how you configured the package. You can check how to configure the package [here](https://github.com/kolirt/vue-telegram-mini-app?tab=readme-ov-file#setup).
+        Leave blank if you have not yet configured the package and have not used it.
+      placeholder: |
+        createTimestamp()
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true

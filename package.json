@@ -1,0 +1,81 @@
+{
+  "name": "@kolirt/vue-telegram-mini-app",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Vue 3 telegram mini app package",
+  "author": "kolirt",
+  "private": false,
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue3",
+    "vuejs",
+    "telegram",
+    "miniapp",
+    "mini app",
+    "miniapps",
+    "mini apps"
+  ],
+  "scripts": {
+    "build": "run-p type-check build-only",
+    "build-only": "vite build -c vite.config.ts",
+    "type-check": "vue-tsc --noEmit -p tsconfig.json --composite false",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore --ignore-path .eslintignore",
+    "format": "prettier --write \"**/*.{ts,js,cjs,vue,json}\""
+  },
+  "pre-commit": [
+    "lint",
+    "type-check"
+  ],
+  "files": [
+    "dist"
+  ],
+  "typings": "./dist/vue-telegram-mini-app.d.ts",
+  "main": "./dist/vue-telegram-mini-app.umd.cjs",
+  "module": "./dist/vue-telegram-mini-app.js",
+  "exports": {
+    ".": {
+      "types": "./dist/vue-telegram-mini-app.d.ts",
+      "import": "./dist/vue-telegram-mini-app.js",
+      "require": "./dist/vue-telegram-mini-app.umd.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kolirt/vue-telegram-mini-app"
+  },
+  "bugs": {
+    "url": "https://github.com/kolirt/vue-telegram-mini-app/issues"
+  },
+  "homepage": "https://github.com/kolirt/vue-telegram-mini-app#readme",
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "dependencies": {
+    "vue": "^3.3.2"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@tsconfig/node18": "^2.0.1",
+    "@types/node": "^18.16.8",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "@vue/tsconfig": "^0.4.0",
+    "bootstrap": "^5.3.3",
+    "eslint": "^8.39.0",
+    "eslint-plugin-vue": "^9.11.0",
+    "npm-run-all": "^4.1.5",
+    "pre-commit": "^1.2.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-attributes": "^1.0.0",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "sass": "^1.63.6",
+    "typescript": "~5.0.4",
+    "vite": "^4.3.5",
+    "vite-plugin-dts": "^2.3.0",
+    "vite-plugin-eslint": "^1.8.1",
+    "vue-tsc": "^1.6.4"
+  }
+}

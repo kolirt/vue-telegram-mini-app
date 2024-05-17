@@ -23,15 +23,15 @@
 
 ## Installation
 ```bash
-npm install --save @kolirt/vue-telegram
+npm install --save @kolirt/vue-telegram-mini-app
 
-yarn add @kolirt/vue-telegram
+yarn add @kolirt/vue-telegram-mini-app
 ```
 
 ## Setup
 ```javascript
 import { createApp } from 'vue'
-import { createTelegram } from '@kolirt/vue-telegram'
+import { createTelegram } from '@kolirt/vue-telegram-mini-app'
 
 const app = createApp({ ... })
 
@@ -48,19 +48,19 @@ app.mount('#app')
 
 ## [window.Telegram.WebApp](https://core.telegram.org/bots/webapps#initializing-mini-apps)
 
-- [ ] initData
+- [X] initData
 - [ ] initDataUnsafe
-- [ ] version
-- [ ] platform
-- [ ] colorScheme
+- [X] version
+- [X] platform
+- [X] colorScheme
 - [ ] themeParams
 - [ ] isExpanded
-- [ ] viewportHeight
-- [ ] viewportStableHeight
-- [ ] headerColor
-- [ ] backgroundColor
-- [ ] isClosingConfirmationEnabled
-- [ ] BackButton
+- [X] viewportHeight
+- [X] viewportStableHeight
+- [X] headerColor
+- [X] backgroundColor
+- [X] isClosingConfirmationEnabled
+- [X] BackButton
 - [ ] MainButton
 - [ ] SettingsButton
 - [ ] HapticFeedback
@@ -71,8 +71,8 @@ app.mount('#app')
 - [X] setBackgroundColor(color)
 - [X] enableClosingConfirmation()
 - [X] disableClosingConfirmation()
-- [ ] onEvent(eventType, eventHandler)
-- [ ] offEvent(eventType, eventHandler)
+- [X] onEvent(eventType, eventHandler)
+- [X] offEvent(eventType, eventHandler)
 - [ ] sendData(data)
 - [ ] switchInlineQuery(query[, choose_chat_types])
 - [ ] openLink(url[, options])
@@ -93,13 +93,13 @@ app.mount('#app')
 
 # FAQ
 
-Check closed [issues](https://github.com/kolirt/vue-telegram/issues) with `FAQ` label to get answers for most asked
+Check closed [issues](https://github.com/kolirt/vue-telegram-mini-app/issues) with `FAQ` label to get answers for most asked
 questions
 
 
 # License
 
-[MIT](https://github.com/kolirt/vue-telegram/blob/master/LICENSE)
+[MIT](./LICENSE)
 
 
 # Other projects

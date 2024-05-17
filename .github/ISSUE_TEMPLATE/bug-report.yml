@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before reporting a bug, please make sure that you have read through our [documentation](https://github.com/kolirt/vue-telegram-mini-app?tab=readme-ov-file#vue-3-timestamp) and existing [issues](https://github.com/kolirt/vue-telegram-mini-app/issues).
+        Before reporting a bug, please make sure that you have read through our [documentation](https://github.com/kolirt/vue-telegram-mini-app?tab=readme-ov-file) and existing [issues](https://github.com/kolirt/vue-telegram-mini-app/issues).
   - type: input
     id: version
     attributes:
@@ -20,7 +20,10 @@ body:
       label: Package configuration
       description: Show how you configured the package. You can check how to configure the package [here](https://github.com/kolirt/vue-telegram-mini-app?tab=readme-ov-file#setup).
       placeholder: |
-        createTimestamp()
+        createTelegram({
+          alwaysExpand: true,
+          closingConfirmation: true
+        })
     validations:
       required: true
   - type: textarea

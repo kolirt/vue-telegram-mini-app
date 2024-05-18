@@ -1,6 +1,6 @@
 {
   "name": "@kolirt/vue-telegram-mini-app",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "description": "Vue 3 telegram mini app package",
   "author": "kolirt",

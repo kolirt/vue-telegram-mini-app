@@ -1,4 +1,5 @@
 import * as BackButton from './backButton'
+import * as HapticFeedback from './hapticFeedback'
 
 export { close } from './close'
 export { disableClosingConfirmation, enableClosingConfirmation } from './closingConfirmation'
@@ -7,4 +8,4 @@ export { autoExpand, expand, stopAutoExpand } from './expand'
 export { ready } from './ready'
 export { setBackgroundColor } from './setBackgroundColor'
 export { setHeaderColor } from './setHeaderColor'
-export { BackButton }
+export { BackButton, HapticFeedback }

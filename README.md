@@ -63,7 +63,7 @@ app.mount('#app')
 - [X] BackButton
 - [ ] MainButton
 - [ ] SettingsButton
-- [ ] HapticFeedback
+- [X] HapticFeedback
 - [ ] CloudStorage
 - [ ] BiometricManager
 - [ ] isVersionAtLeast

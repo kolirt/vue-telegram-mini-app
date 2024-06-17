@@ -1,4 +1,5 @@
 export * from './actions'
+export { fixTma, unfixTma } from './helpers/fixTma'
 export { createTelegramMiniApp } from './plugin'
 export { state, updateState } from './state'
 export { EventType } from './types'

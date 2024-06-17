@@ -2,10 +2,6 @@ const options = { passive: false }
 let ts: any
 let scrollableEl: HTMLElement | null
 
-function ignore(e: TouchEvent) {
-  e.preventDefault()
-}
-
 function onTouchStart(e: TouchEvent) {
   ts = e.touches[0].clientY
 }
@@ -43,14 +39,10 @@ export function fixTma(el: HTMLElement | null) {
   window.addEventListener('scroll', onScroll)
   document.documentElement.addEventListener('touchstart', onTouchStart, options)
   document.documentElement.addEventListener('touchmove', onTouchMove, options)
-  document.body.addEventListener('touchcancel', ignore, options)
-  document.body.addEventListener('touchend', ignore, options)
 }
 
 export function unfixTma() {
   window.removeEventListener('scroll', onScroll)
   document.documentElement.removeEventListener('touchstart', onTouchStart)
   document.documentElement.removeEventListener('touchmove', onTouchMove)
-  document.body.removeEventListener('touchcancel', ignore)
-  document.body.removeEventListener('touchend', ignore)
 }

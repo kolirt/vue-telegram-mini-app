@@ -1,4 +1,5 @@
 export * from './actions'
+export { fixIosMultitaps, unfixIosMultitaps } from './helpers/fixIosMultitaps'
 export { fixTma, unfixTma } from './helpers/fixTma'
 export { createTelegramMiniApp } from './plugin'
 export { state, updateState } from './state'

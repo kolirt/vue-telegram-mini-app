@@ -31,11 +31,11 @@ yarn add @kolirt/vue-telegram-mini-app
 ## Setup
 ```javascript
 import { createApp } from 'vue'
-import { createTelegram } from '@kolirt/vue-telegram-mini-app'
+import { createTelegramMiniApp } from '@kolirt/vue-telegram-mini-app'
 
 const app = createApp({ ... })
 
-app.use(createTelegram({
+app.use(createTelegramMiniApp({
   alwaysExpand: true,
   closingConfirmation: true
 }))

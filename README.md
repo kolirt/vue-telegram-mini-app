@@ -60,11 +60,25 @@ app.mount('#app')
 - [X] headerColor
 - [X] backgroundColor
 - [X] isClosingConfirmationEnabled
-- [X] BackButton
+- [ ] BackButton
+  - [ ] isVisible
+  - [X] BackButton.onClick
+  - [X] BackButton.offClick
+  - [X] BackButton.show
+  - [X] BackButton.hide
 - [ ] MainButton
 - [ ] SettingsButton
 - [X] HapticFeedback
-- [ ] CloudStorage
+  - [X] HapticFeedback.impactOccurred
+  - [X] HapticFeedback.notificationOccurred
+  - [X] HapticFeedback.selectionChanged
+- [X] CloudStorage
+  - [X] CloudStorage.setItem
+  - [X] CloudStorage.getItem
+  - [X] CloudStorage.getItems
+  - [X] CloudStorage.removeItem
+  - [X] CloudStorage.removeItems
+  - [X] CloudStorage.getKeys
 - [ ] BiometricManager
 - [ ] isVersionAtLeast
 - [X] setHeaderColor(color)

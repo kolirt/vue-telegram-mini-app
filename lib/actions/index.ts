@@ -1,4 +1,5 @@
 import * as BackButton from './backButton'
+import * as CloudStorage from './cloudStorage'
 import * as HapticFeedback from './hapticFeedback'
 
 export { close } from './close'
@@ -8,4 +9,4 @@ export { autoExpand, expand, stopAutoExpand } from './expand'
 export { ready } from './ready'
 export { setBackgroundColor } from './setBackgroundColor'
 export { setHeaderColor } from './setHeaderColor'
-export { BackButton, HapticFeedback }
+export { BackButton, CloudStorage, HapticFeedback }

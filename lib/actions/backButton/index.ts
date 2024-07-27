@@ -1,7 +1,8 @@
-export { offClick, onClick } from './events'
-export { hide, show } from './visible'
 import { isVersionAtLeast } from '../isVersionAtLeast'
 
-export function isBackButtonSupported(): boolean {
+export { offClick, onClick } from './events'
+export { hide, show } from './visible'
+
+export function isSupported(): boolean {
   return isVersionAtLeast('6.1')
 }

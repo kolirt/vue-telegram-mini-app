@@ -1,4 +1,4 @@
-import { enableVerticalSwipes, isVerticalSwipesSupported } from '../actions/verticalSwipes'
+import { VerticalSwipes } from '../actions'
 
 const options = { passive: false }
 let ts: any
@@ -29,8 +29,8 @@ function onScroll() {
 }
 
 export function fixTma(el: HTMLElement | null) {
-  if (isVerticalSwipesSupported()) {
-    enableVerticalSwipes()
+  if (VerticalSwipes.isSupported()) {
+    VerticalSwipes.enable()
   } else {
     scrollableEl = el
 
@@ -48,7 +48,7 @@ export function fixTma(el: HTMLElement | null) {
 }
 
 export function unfixTma() {
-  if (!isVerticalSwipesSupported()) {
+  if (!VerticalSwipes.isSupported()) {
     window.removeEventListener('scroll', onScroll)
     document.documentElement.removeEventListener('touchstart', onTouchStart)
     document.documentElement.removeEventListener('touchmove', onTouchMove)

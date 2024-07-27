@@ -1,18 +1,12 @@
-import * as BackButton from './backButton'
-import * as CloudStorage from './cloudStorage'
-import * as HapticFeedback from './hapticFeedback'
-
+export * as BackButton from './backButton'
+export * as BackgroundColor from './backgroundColor'
 export { close } from './close'
-export {
-  disableClosingConfirmation,
-  enableClosingConfirmation,
-  isClosingConfirmationSupported
-} from './closingConfirmation'
-export { offEvent, onEvent } from './events'
-export { autoExpand, expand, stopAutoExpand } from './expand'
+export * as ClosingConfirmation from './closingConfirmation'
+export * as CloudStorage from './cloudStorage'
+export * as Events from './events'
+export * as Expand from './expand'
+export * as HapticFeedback from './hapticFeedback'
+export * as HeaderColor from './headerColor'
 export { isVersionAtLeast } from './isVersionAtLeast'
 export { ready } from './ready'
-export { isBackgroundColorSupported, setBackgroundColor } from './setBackgroundColor'
-export { isHeaderColorSupported, setHeaderColor } from './setHeaderColor'
-export { disableVerticalSwipes, enableVerticalSwipes, isVerticalSwipesSupported } from './verticalSwipes'
-export { BackButton, CloudStorage, HapticFeedback }
+export * as VerticalSwipes from './verticalSwipes'

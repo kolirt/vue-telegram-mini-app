@@ -1,6 +1,6 @@
 import { reactive } from 'vue'
 
-import { autoExpand, enableClosingConfirmation, setBackgroundColor, setHeaderColor } from './actions'
+import { BackgroundColor, ClosingConfirmation, Expand, HeaderColor } from './actions'
 import type { Options } from './types'
 
 export const state = reactive<Options>({
@@ -13,18 +13,18 @@ export function setOptions(options: Options) {
   }
 
   if (options.alwaysExpand) {
-    autoExpand()
+    Expand.enableAutoExpand()
   }
 
   if (options.closingConfirmation) {
-    enableClosingConfirmation()
+    ClosingConfirmation.enable()
   }
 
   if (options.headerColor) {
-    setHeaderColor(options.headerColor)
+    HeaderColor.set(options.headerColor)
   }
 
   if (options.backgroundColor) {
-    setBackgroundColor(options.backgroundColor)
+    BackgroundColor.set(options.backgroundColor)
   }
 }

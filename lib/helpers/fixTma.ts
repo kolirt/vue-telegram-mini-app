@@ -1,3 +1,5 @@
+import { enableVerticalSwipes, isVerticalSwipesSupported } from '../actions/verticalSwipes'
+
 const options = { passive: false }
 let ts: any
 let scrollableEl: HTMLElement | null
@@ -27,22 +29,28 @@ function onScroll() {
 }
 
 export function fixTma(el: HTMLElement | null) {
-  scrollableEl = el
+  if (isVerticalSwipesSupported()) {
+    enableVerticalSwipes()
+  } else {
+    scrollableEl = el
 
-  // @ts-ignore
-  window.overflowPadding = 100
-  // @ts-ignore
-  document.body.style.height = window.innerHeight + window.overflowPadding + 'px'
-  // @ts-ignore
-  window.scrollTo(0, window.overflowPadding)
+    // @ts-ignore
+    window.overflowPadding = 100
+    // @ts-ignore
+    document.body.style.height = window.innerHeight + window.overflowPadding + 'px'
+    // @ts-ignore
+    window.scrollTo(0, window.overflowPadding)
 
-  window.addEventListener('scroll', onScroll)
-  document.documentElement.addEventListener('touchstart', onTouchStart, options)
-  document.documentElement.addEventListener('touchmove', onTouchMove, options)
+    window.addEventListener('scroll', onScroll)
+    document.documentElement.addEventListener('touchstart', onTouchStart, options)
+    document.documentElement.addEventListener('touchmove', onTouchMove, options)
+  }
 }
 
 export function unfixTma() {
-  window.removeEventListener('scroll', onScroll)
-  document.documentElement.removeEventListener('touchstart', onTouchStart)
-  document.documentElement.removeEventListener('touchmove', onTouchMove)
+  if (!isVerticalSwipesSupported()) {
+    window.removeEventListener('scroll', onScroll)
+    document.documentElement.removeEventListener('touchstart', onTouchStart)
+    document.documentElement.removeEventListener('touchmove', onTouchMove)
+  }
 }

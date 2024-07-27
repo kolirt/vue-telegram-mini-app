@@ -11,6 +11,7 @@ export type State = {
   headerColor: string
   backgroundColor: string
   isClosingConfirmationEnabled: boolean
+  isVerticalSwipesEnabled: boolean
 }
 
 export type Options = {

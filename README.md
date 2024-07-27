@@ -60,6 +60,7 @@ app.mount('#app')
 - [X] headerColor
 - [X] backgroundColor
 - [X] isClosingConfirmationEnabled
+- [X] isVerticalSwipesEnabled
 - [ ] BackButton
   - [ ] isVisible
   - [X] BackButton.onClick
@@ -80,11 +81,13 @@ app.mount('#app')
   - [X] CloudStorage.removeItems
   - [X] CloudStorage.getKeys
 - [ ] BiometricManager
-- [ ] isVersionAtLeast
+- [X] isVersionAtLeast
 - [X] setHeaderColor(color)
 - [X] setBackgroundColor(color)
 - [X] enableClosingConfirmation()
 - [X] disableClosingConfirmation()
+- [X] enableVerticalSwipes()
+- [X] disableVerticalSwipes()
 - [X] onEvent(eventType, eventHandler)
 - [X] offEvent(eventType, eventHandler)
 - [ ] sendData(data)

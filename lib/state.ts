@@ -15,7 +15,8 @@ export const state = reactive<State>({
   viewportStableHeight: 0,
   headerColor: '',
   backgroundColor: '',
-  isClosingConfirmationEnabled: false
+  isClosingConfirmationEnabled: false,
+  isVerticalSwipesEnabled: false
 })
 
 export function updateState() {
@@ -29,4 +30,5 @@ export function updateState() {
   state.headerColor = webApp.headerColor
   state.backgroundColor = webApp.backgroundColor
   state.isClosingConfirmationEnabled = webApp.isClosingConfirmationEnabled
+  state.isVerticalSwipesEnabled = webApp.isVerticalSwipesEnabled
 }

@@ -1,12 +1,24 @@
-export * as BackButton from './backButton'
-export * as BackgroundColor from './backgroundColor'
+import * as BackButton from './backButton'
+import * as BackgroundColor from './backgroundColor'
+import * as ClosingConfirmation from './closingConfirmation'
+import * as CloudStorage from './cloudStorage'
+import * as Events from './events'
+import * as Expand from './expand'
+import * as HapticFeedback from './hapticFeedback'
+import * as HeaderColor from './headerColor'
+import * as VerticalSwipes from './verticalSwipes'
+
 export { close } from './close'
-export * as ClosingConfirmation from './closingConfirmation'
-export * as CloudStorage from './cloudStorage'
-export * as Events from './events'
-export * as Expand from './expand'
-export * as HapticFeedback from './hapticFeedback'
-export * as HeaderColor from './headerColor'
 export { isVersionAtLeast } from './isVersionAtLeast'
 export { ready } from './ready'
-export * as VerticalSwipes from './verticalSwipes'
+export {
+  BackButton,
+  BackgroundColor,
+  ClosingConfirmation,
+  CloudStorage,
+  Events,
+  Expand,
+  HapticFeedback,
+  HeaderColor,
+  VerticalSwipes
+}

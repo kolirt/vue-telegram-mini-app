@@ -54,7 +54,7 @@ app.mount('#app')
 - [X] platform
 - [X] colorScheme
 - [ ] themeParams
-- [ ] isExpanded
+- [X] isExpanded
 - [X] viewportHeight
 - [X] viewportStableHeight
 - [X] headerColor

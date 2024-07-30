@@ -30,7 +30,7 @@ function onScroll() {
 
 export function fixTma(el: HTMLElement | null) {
   if (VerticalSwipes.isSupported()) {
-    VerticalSwipes.enable()
+    VerticalSwipes.disable()
   } else {
     scrollableEl = el
 
@@ -48,7 +48,9 @@ export function fixTma(el: HTMLElement | null) {
 }
 
 export function unfixTma() {
-  if (!VerticalSwipes.isSupported()) {
+  if (VerticalSwipes.isSupported()) {
+    VerticalSwipes.enable()
+  } else {
     window.removeEventListener('scroll', onScroll)
     document.documentElement.removeEventListener('touchstart', onTouchStart)
     document.documentElement.removeEventListener('touchmove', onTouchMove)

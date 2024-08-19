@@ -3,7 +3,21 @@
 
   <p>Vue 3 telegram mini app package</p>
 
-  <img src="https://img.shields.io/static/v1?label=Made%20with&message=VueJS&color=limegreen&style=for-the-badge&logo=vue.js" />
+  <img src="https://img.shields.io/node/v/@kolirt/vue-telegram-mini-app" alt="node-current" />
+
+  <img src="https://img.shields.io/npm/dependency-version/@kolirt/vue-telegram-mini-app/peer/vite" alt="npm peer dependency version" />
+
+  <img src="https://img.shields.io/bundlephobia/minzip/@kolirt/vue-telegram-mini-app?label=minfied" alt="npm bundle size"/>
+
+  <a href="https://www.npmjs.com/package/@kolirt/vue-telegram-mini-app" target="_blank">
+    <img src="https://img.shields.io/npm/v/@kolirt/vue-telegram-mini-app" alt="npm-version" />
+  </a>
+
+  <img src="https://img.shields.io/npm/l/@kolirt/vue-telegram-mini-app" alt="licence" />
+
+  <div>
+    <img src="https://img.shields.io/static/v1?label=Made%20with&message=VueJS&color=limegreen&style=for-the-badge&logo=vue.js" />
+  </div>
 </div>
 
 

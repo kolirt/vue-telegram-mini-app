@@ -1,11 +1,9 @@
-<h1 align="center">Vue 3 telegram mini apps</h1>
+# Vue 3 telegram mini apps
+Vue 3 telegram mini app package
 
-<p align="center">
-  <img src="https://img.shields.io/static/v1?label=Made%20with&message=VueJS&color=limegreen&style=for-the-badge&logo=vue.js" />
-</p>
+<img src="https://img.shields.io/static/v1?label=Made%20with&message=VueJS&color=limegreen&style=for-the-badge&logo=vue.js" />
 
-**Table of Contents**
-
+## Structure
 - [Getting started](#getting-started)
   - [Installation](#installation)
   - [Setup](#setup)
@@ -19,16 +17,18 @@
   <img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
 </a>
 
-# Getting started
 
-## Installation
+## Getting started
+
+### Installation
 ```bash
 npm install --save @kolirt/vue-telegram-mini-app
 
 yarn add @kolirt/vue-telegram-mini-app
 ```
 
-## Setup
+
+### Setup
 ```javascript
 import { createApp } from 'vue'
 import { createTelegramMiniApp } from '@kolirt/vue-telegram-mini-app'
@@ -44,10 +44,9 @@ app.mount('#app')
 ```
 
 
-# Telegram Mini Apps API implementation status
+## Telegram Mini Apps API implementation status
 
-## [window.Telegram.WebApp](https://core.telegram.org/bots/webapps#initializing-mini-apps)
-
+### [window.Telegram.WebApp](https://core.telegram.org/bots/webapps#initializing-mini-apps)
 - [X] initData
 - [ ] initDataUnsafe
 - [X] version
@@ -108,17 +107,14 @@ app.mount('#app')
 - [X] close()
 
 
-# FAQ
-
+## FAQ
 Check closed [issues](https://github.com/kolirt/vue-telegram-mini-app/issues) with `FAQ` label to get answers for most asked
 questions
 
 
-# License
-
+## License
 [MIT](./LICENSE)
 
 
-# Other projects
-
+## Other projects
 Check out my other projects on my [GitHub profile](https://github.com/kolirt)

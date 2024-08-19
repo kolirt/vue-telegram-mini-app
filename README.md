@@ -1,7 +1,11 @@
-# Vue 3 telegram mini apps
-Vue 3 telegram mini app package
+<div align="center">
+  <h1>Vue 3 telegram mini apps</h1>
 
-<img src="https://img.shields.io/static/v1?label=Made%20with&message=VueJS&color=limegreen&style=for-the-badge&logo=vue.js" />
+  <p>Vue 3 telegram mini app package</p>
+
+  <img src="https://img.shields.io/static/v1?label=Made%20with&message=VueJS&color=limegreen&style=for-the-badge&logo=vue.js" />
+</div>
+
 
 ## Structure
 - [Getting started](#getting-started)
